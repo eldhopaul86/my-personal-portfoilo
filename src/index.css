@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&family=Silkscreen:wght@400;700&family=Unbounded:wght@800;900&family=Syne:wght@800;900&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap');
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-card: #f8fafc;
+  --blue-solid: #28469c;
+  --blue-light: #3b5bbb;
+  --blue-glow: rgba(40, 70, 156, 0.12);
+  --charcoal-dark: #0f172a;
+  --charcoal-primary: #1e293b;
+  --charcoal-light: #334155;
+  --charcoal-muted: #64748b;
+  --green-primary: #28469c;
+  --green-secondary: #3b5bbb;
+  --green-dark: #1c316e;
+  --green-glow: rgba(40, 70, 156, 0.15);
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border-color: rgba(15, 23, 42, 0.08);
+  --grid-line-color: rgba(15, 23, 42, 0.08);
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --navbar-border: rgba(15, 23, 42, 0.08);
+  --navbar-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-display: 'Unbounded', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  --font-pixel: 'Silkscreen', cursive;
+  --font-brand: 'Plus Jakarta Sans', sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #111111;
+  --bg-secondary: #17171a;
+  --bg-card: #1c1c20;
+  --blue-solid: #ffffff;
+  --blue-light: #ffffff;
+  --blue-glow: rgba(255, 255, 255, 0.2);
+  --charcoal-dark: #ffffff;
+  --charcoal-primary: #ffffff;
+  --charcoal-light: #ffffff;
+  --charcoal-muted: rgba(255, 255, 255, 0.7);
+  --green-primary: #ffffff;
+  --green-secondary: #ffffff;
+  --green-dark: #ffffff;
+  --green-glow: rgba(255, 255, 255, 0.25);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.88);
+  --text-muted: rgba(255, 255, 255, 0.65);
+  --border-color: rgba(255, 255, 255, 0.18);
+  --grid-line-color: rgba(255, 255, 255, 0.08);
+  --navbar-bg: rgba(17, 17, 17, 0.95);
+  --navbar-border: rgba(255, 255, 255, 0.16);
+  --navbar-shadow: 0 12px 36px rgba(0, 0, 0, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 41, 59, 0.28);
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #28469c;
+}
+
+::selection {
+  background: var(--green-primary);
+  color: var(--bg-primary);
+}
